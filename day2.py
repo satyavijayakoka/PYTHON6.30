@@ -59,8 +59,8 @@ print(6 == 6 or 8 == 9)
 print(8 == 9 or 9 == 8)
 
 #not
-print(not(9==9))
-print(not(8==9))
+print(not 9==9)
+print(not 8==9)
 
 
 
