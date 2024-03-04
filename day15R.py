@@ -54,5 +54,5 @@ print(e5)
 
 # program 8
 email= "ammu.duggi123@gmail.com"
-e6 = email.split('@')
+e6 = email.split('@')     # ['ammu.duggi123', 'gmail.com']
 print(e6)
