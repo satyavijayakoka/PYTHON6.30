@@ -56,3 +56,56 @@ print(e5)
 email= "ammu.duggi123@gmail.com"
 e6 = email.split('@')     # ['ammu.duggi123', 'gmail.com']
 print(e6)
+
+# program 9
+# find()
+emailaddress = "chinmaya"
+print(emailaddress.find('a')) #5
+print(emailaddress.find('a',6)) #7
+#print(emailaddress.find('a',8))  # -1
+
+# program 10
+# removeprefix()
+email2 = "gmail.com@chinmay"
+email3 = "gmail.com@samay"
+email4 = "gmail.com@sham"
+print(email4.removeprefix('gmail.com@'))
+
+# program 11
+#["chinmay","samay","sham"]
+students = [email2,email3,email4]
+lista =[]   
+for x in students:
+    q1 = x.removeprefix('gmail.com@')
+    lista.append(q1)
+print(lista)
+
+# program 12
+# names = ["chinmay","poorva","sham","nirnay"]
+students = {
+    "1":"chinmayadmin",
+    "2":"poorvaceo",
+    "3":"shamcustomer",
+    "4":"nirnaymanager"
+}
+
+roles = ["admin","ceo","customer","manager"]
+names = []
+for name in students.values():
+    for role in roles:
+        if role in name:
+            q2 = name.removesuffix(role)
+            names.append(q2)
+print(names)
+
+# swapcase()
+a = "hello"
+print(a.swapcase()) #HELLO
+b = "GOod"
+print(b.swapcase()) #goOD
+
+#zfill()
+name = "satya"
+name2 = "vijaya"
+print(name.zfill(9))
+print(name2.zfill(9))
