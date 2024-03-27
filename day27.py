@@ -98,6 +98,51 @@ print(satya.dName)
 satya.displayDName()
 satya.displayMName()
 
+# multiple inheritance
+
+class Mother:
+    def __init__(self,fn,ln):
+        print("mother constructor is called...")
+        self.firstName = fn
+        self.lastName = ln
+    
+    def displayName(self):
+        print(self.firstName + self.lastName)
+
+class Father:
+    def __init__(self,fn,ln):
+        print("father constructor is called....")
+        self.firstName = fn
+        self.lastName = ln
+    
+    def displayName(self):
+        print(self.firstName + self.lastName)
+
+class Son(Mother,Father):
+    def __init__(self,fn,ln,sn):
+        super().__init__(fn,ln)
+        self.sName = sn
+    
+    def displaySName(self):
+        print(self.sName + self.lastName)
+
+shiva = Son("Bhagyalakshmi","koka","shiva")
+print(shiva.firstName)
+print(shiva.lastName)
+print(shiva.sName)
+shiva.displaySName()
+shiva.displayName()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
