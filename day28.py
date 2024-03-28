@@ -93,6 +93,80 @@ u = Duck()
 call_talk(s)
 call_talk(t)
 call_talk(u)
+#-------------------------------------------------
+print("hello"+"bye") #hellobye
+print(4+5) #9
+print([1,2,3]+[11,22,33]) #[1, 2, 3, 11, 22, 33]
+
+# class Bookx:
+#     def __init__(self,pages):
+#         self.pages = pages
+#     def __add__(self,other):
+#         return self.pages + other.pages
+
+# class Booky:
+#     def __init__(self,pages):
+#         self.pages = pages
+#     def __add__(self,other):
+#         return self.pages + other.pages
+
+# ramayan = Bookx(120)
+# mahabarath = Booky(45)
+# print(ramayan.pages+mahabarath.pages)
+# print(ramayan+mahabarath)
+# print(mahabarath+ramayan)
+
+print(4>2) # True
+
+# class Bookx:
+#     def __init__(self,pages):
+#         self.pages = pages
+#     def __gt__(self,other):
+#         return self.pages > other.pages
+
+# class Booky:
+#     def __init__(self,pages):
+#         self.pages = pages
+#     def __lt__(self,other):
+#         return self.pages < other.pages
+
+# ramayan = Bookx(120)
+# mahabarath = Booky(130)
+# print(ramayan.pages + mahabarath.pages) #250
+# print(ramayan > mahabarath) # False
+# print(mahabarath < ramayan) # False
+
+# overriding
+
+class WorldBank:
+    def save(self):
+        print("I am save from worldbank")
+    def loan(self):
+        print("I am loan from worldbank")
+
+class SBI(WorldBank):
+    def save(self):
+        print("I am save from SBI")
+        super().save()
+    def loan(self):
+        print("I am loan from SBI")
+        super().loan()
+
+class PNB(WorldBank):
+    def save(self):
+        print("I am save from PNB")
+        super().save()
+    def loan(self):
+        print("I am loan from PNB")
+        super().loan()
+
+a = SBI()
+a.save()
+a.loan()
+
+
+
+
 
 
 
