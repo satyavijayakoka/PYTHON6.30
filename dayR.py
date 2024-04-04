@@ -123,13 +123,44 @@ else:
     print("incorrect input")
 
 # program 9
+# marks = 92
+# if marks > 90:
+#     print("Grade A")
+# if marks > 75:
+#     print("Grade B")
+# if marks >65:
+#     print("Grade C")
+
+# program 10
 marks = 92
 if marks > 90:
     print("Grade A")
-if marks > 75:
+elif marks >= 75:
     print("Grade B")
-if marks >65:
+elif marks >= 65:
     print("Grade C")
+else:
+    print("invalid please try again")
+
+# program 11
+x1 = 20
+y1 = 50
+if x1 > y1:
+    print("x1 is greater")
+else:
+    print("y1 is greater")
+
+# program 12
+x1 = 100
+x2 = 50
+x3 = 200
+if x1 > x2 and x1 > x3:
+    print("x1 is greater")
+elif x2 > x3 and x2 > x1:
+    print("x2 is greater")
+else:
+    print("x3 is greater")
+
 
 
 
