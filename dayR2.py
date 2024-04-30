@@ -27,7 +27,8 @@
 #     print(x)
 
 # # program 7
-# # break statement
+# break statment and continue statment with for
+# break immediately halt the loop
 # for x in range(1,6):
 #     if x == 3:
 #         break
@@ -125,12 +126,21 @@ while(i8 >= 1):
     i8 = i8-1
 
 
+for a in range(1,11):
+    if a==5:
+        break
+    print(a)
+
+for a in range(1,11):
+    print(a)
+    if a==5:
+        break
 
 
-
-
-
-
+for a in range(5):
+    if a == 3:
+        continue
+    print(a)
 
 
 

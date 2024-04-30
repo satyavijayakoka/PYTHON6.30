@@ -174,9 +174,13 @@ else:
 # ternary operator
 print("a11 is greater") if a11 > a22 else print("a22 is greater")
 
+age = 17
+f = "can drive" if age >= 17 else "cannot drive"
+print(f)
 
-
-
+g = 12
+h = 20
+print("g is greater") if g > h else print("h is greater")
 
 
 
