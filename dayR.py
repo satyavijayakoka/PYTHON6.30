@@ -161,7 +161,18 @@ elif x2 > x3 and x2 > x1:
 else:
     print("x3 is greater")
 
+# program 13
 
+a11 = 10
+a22 = 5
+
+if a11 > a22:
+    print("a11 is greater")
+else:
+    print("a22 is greater")
+
+# ternary operator
+print("a11 is greater") if a11 > a22 else print("a22 is greater")
 
 
 
