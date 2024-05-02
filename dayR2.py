@@ -142,20 +142,51 @@ for a in range(5):
         continue
     print(a)
 
+#may 2nd
+# program 1
+for x in range(3):
+    print(x)
+
+for x in range(1,11):
+    print(x)
+
+for x in range(2,21,2):
+    print(x)
+
+for x in range(20,1,-2):
+    print(x)
+
+for x in range(50,4,-5):
+    print(x)
+
+# break statement with for
+for x in range(10,5,-1):
+    if x==7:
+        break
+    print(x)
 
 
+for x in range(10,5,-1):
+    print(x)
+    if x==7:
+        break
+    
+for x in range(1,5):
+    if x == 3:
+        break
+    print(x)
 
 
+for x in range(1,5):
+    if x == 3:
+        continue
+    print(x)
 
-
-
-
-
-
-
-
-
-
+for x in range(10,5,-1):
+    if x == 7:
+        continue
+    print(x)
+    
 
 
 
