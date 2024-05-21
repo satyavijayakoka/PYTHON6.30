@@ -64,6 +64,48 @@ while(i3 < len(city7)):
     i3 = i3 + 1
 
 
+# ============ may11th =============================================
+listA = ["chinmay","shirish","sarika"]
+print(listA)
+print(type(listA))
+
+first_name = "chinmay"
+print(first_name)
+print(type(first_name))
+
+# string stores the value of index
+print(first_name[0])
+
+# can we update list
+listA[0] = "poorva"
+print(listA)
+
+# # can we update char of string ===> no
+# last_name = "deshpande"
+# last_name[0] = "s"
+# print(last_name)
+
+
+fruit = "apple"
+for x in range(len(fruit)):
+    print(fruit[x])
+
+for ch in fruit:
+    print(ch)
+
+i1 = 0
+while(i1 < len(fruit)):
+    print(fruit[i1])
+    i1 = i1+1
+
+
+city8 = "pune"
+for char in city8:
+    rev = char + rev
+print(rev)
+
+
+
 
 
 
