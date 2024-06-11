@@ -70,27 +70,78 @@ i = addToSetA(setA)
 print(i)
 # print(setA)
 
+# =============== june 11th =======================================
+
+# def add(x,y):
+#     return x+y
+# print(add(12,4))
+
+# lambda function
+
+add = lambda a,b:a+b
+e = add(1,4)
+print(e)
+
+sqr = lambda x: x*x
+r = sqr(9)
+print(r)
+
+# program 2
+# function as parameter to another function
+
+add = lambda a,b:a+b
+def addition(fn,a,b):
+   # fn = lambda a,b:a+b
+   e = fn(a,b)
+   return e
+r = addition(add,12,4)
+print(r)
+
+def substraction(fn,x,y):
+    # fn = lambda x,y:x-y
+    return fn(x,y)
+
+s = substraction(lambda x,y:x-y,22,4)
+print(s)
 
 
+# function as return type
+def greet():
+    return lambda :"hello"
+c = greet()
+print(c())
 
 
+# program 3
+# default
+def add(x=32,y=12):
+    print(x+y)
+add(11,11)
 
+# positional arguments
+def sub(x,y):
+    return x-y
+r = sub(y=17,x=23)
+print(r)
 
+# *args
+def add(*args):
+    print(args)
+    total = 0
+    for i in args:
+        total = total + i
+    return total
+t = add(12,23,44,2,3,9,6,8,5,7,11,21,2,1,4,6)
+print(t)
 
+# **kwargs
+def info(**kwargs):
+    print(kwargs)
+    kwargs['city']= "erie"
+    return kwargs
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+r = info(name = "satya", age = "40", rollNo = 24)
+print(r)
 
 
 
