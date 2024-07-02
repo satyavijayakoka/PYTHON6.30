@@ -156,6 +156,7 @@ satya.displayMName()
 
 class Father:
     def __init__(self,fn,ln):
+        print("father constructor is called")
         self.firstName = fn
         self.lastName = ln
 
@@ -163,6 +164,7 @@ class Father:
         print(self.firstName + self.lastName)
 
 class Mother:
+    print("mother constructor is called")
     def __init__(self,fn,ln):
         self.firstName = fn
         self.lastName = ln
